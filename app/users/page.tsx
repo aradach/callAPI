@@ -26,12 +26,12 @@ const Todo = () => {
     const url = "https://jsonplaceholder.typicode.com/todos"
 
     useEffect(()=>{
-        const fetchUser = async() =>{
+        const fetchTodo = async() =>{
             const res = await fetch (url);
             const data = await res.json()
             console.log(data)
         };
-        fetchUser();
+        fetchTodo();
     },[]);
 
     return (
