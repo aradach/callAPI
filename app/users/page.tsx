@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 
 const User = () => {
-    const [users, serUsers] = useState([])
+    const [users, setUsers] = useState([])
     const url = "https://jsonplaceholder.typicode.com/users"
 
     useEffect(()=>{
